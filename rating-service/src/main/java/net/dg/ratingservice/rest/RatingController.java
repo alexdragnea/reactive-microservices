@@ -19,56 +19,46 @@ import java.util.stream.Stream;
 @RequestMapping("/rating")
 public class RatingController {
 
-    private final RatingService ratingService;
+	private final RatingService ratingService;
 
-    @GetMapping
-    Flux<Rating> getAll() {
-        return ratingService.findAllRatings();
-    }
+	@GetMapping
+	Flux<Rating> getAll() {
+		return ratingService.findAllRatings();
+	}
 
-    @GetMapping("/book/{id}")
-    Flux<Rating> getRatingsByBookId(@PathVariable("id") String id) {
-        return ratingService.findRatingsByBookId(id);
-    }
+	@GetMapping("/book/{id}")
+	Flux<Rating> getRatingsByBookId(@PathVariable("id") String id) {
+		return ratingService.findRatingsByBookId(id);
+	}
 
+	@GetMapping("/{id}")
+	Mono<Rating> getById(@PathVariable("id") String id) {
+		return ratingService.findRatingById(id);
+	}
 
-    @GetMapping("/{id}")
-    Mono<Rating> getById(@PathVariable("id") String id) {
-        return ratingService.findRatingById(id);
-    }
+	@PostMapping
+	@ResponseStatus(HttpStatus.CREATED)
+	Mono<Rating> create(@RequestBody Rating rating) {
+		return ratingService.createRating(rating);
+	}
 
+	@DeleteMapping("/{id}")
+	Mono<ResponseEntity<Rating>> deleteById(@PathVariable String id) {
+		return ratingService.deleteRating(id).map(ResponseEntity::ok).defaultIfEmpty(ResponseEntity.notFound().build());
+	}
 
-    @PostMapping
-    @ResponseStatus(HttpStatus.CREATED)
-    Mono<Rating> create(@RequestBody Rating rating) {
-        return ratingService.createRating(rating);
-    }
+	@PutMapping("/{ratingId}")
+	public Mono<ResponseEntity<Rating>> updateUserById(@PathVariable String ratingId, @RequestBody Rating rating) {
+		return ratingService.updateRating(rating, ratingId).map(ResponseEntity::ok)
+				.defaultIfEmpty(ResponseEntity.notFound().build());
+	}
 
-    @DeleteMapping("/{id}")
-    Mono<ResponseEntity<Rating>> deleteById(@PathVariable String id) {
-        return
-                ratingService.deleteRating(id).map(ResponseEntity::ok)
-                        .defaultIfEmpty(ResponseEntity.notFound().build());
-    }
-
-
-    @PutMapping("/{ratingId}")
-    public Mono<ResponseEntity<Rating>> updateUserById(@PathVariable String ratingId, @RequestBody Rating rating) {
-        return ratingService.updateRating(rating, ratingId)
-                .map(ResponseEntity::ok)
-                .defaultIfEmpty(ResponseEntity.notFound().build());
-    }
-
-    @GetMapping(value = "/stream", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
-    public Flux<Rating> streamAllRatings() {
-        return ratingService
-                .findAllRatings()
-                .flatMap(rating -> Flux
-                        .zip(Flux.interval(Duration.ofSeconds(2)),
-                                Flux.fromStream(Stream.generate(() -> rating))
-                        )
-                        .map(Tuple2::getT2)
-                );
-    }
+	@GetMapping(value = "/stream", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
+	public Flux<Rating> streamAllRatings() {
+		return ratingService.findAllRatings()
+				.flatMap(rating -> Flux
+						.zip(Flux.interval(Duration.ofSeconds(2)), Flux.fromStream(Stream.generate(() -> rating)))
+						.map(Tuple2::getT2));
+	}
 
 }

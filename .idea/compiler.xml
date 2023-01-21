@@ -8,14 +8,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="rating-service" />
-        <module name="reactive-microservices" />
-        <module name="booking-service" />
+        <module name="book-service" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="booking-service" options="-parameters" />
+      <module name="book-service" options="-parameters" />
       <module name="rating-service" options="-parameters" />
     </option>
   </component>

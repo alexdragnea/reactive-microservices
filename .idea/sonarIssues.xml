@@ -13,6 +13,126 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/book-service/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/book-service/src/main/java/net/dg/book/BookServiceApplication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/book-service/src/main/java/net/dg/book/repository/BookRepository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/book-service/src/main/java/net/dg/book/service/impl/BookServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/book-service/src/main/java/net/dg/bookingservice/BookServiceApplication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/book-service/src/main/java/net/dg/bookingservice/config/AppConfig.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/book-service/src/main/java/net/dg/bookingservice/repository/BookRepository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/book-service/src/main/java/net/dg/books/BookServiceApplication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/book-service/src/main/java/net/dg/books/repository/BookRepository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/book-service/src/main/java/net/dg/books/service/impl/BookServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/book-service/src/main/java/net/dg/bookservice/BookServiceApplication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/book-service/src/main/java/net/dg/bookservice/config/AppConfig.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/book-service/src/main/java/net/dg/bookservice/entity/ErrorResponse.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/book-service/src/main/java/net/dg/bookservice/exception/BookNotFoundException.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/book-service/src/main/java/net/dg/bookservice/exception/handler/CustomExceptionHandler.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/book-service/src/main/java/net/dg/bookservice/exception/handler/ExceptionHandler.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/book-service/src/main/java/net/dg/bookservice/exceptions/handler/CustomExceptionHandler.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/book-service/src/main/java/net/dg/bookservice/exceptions/handler/ExceptionHandler.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/book-service/src/main/java/net/dg/bookservice/repository/BookRepository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/book-service/src/main/java/net/dg/bookservice/rest/BookController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/book-service/src/main/java/net/dg/bookservice/service/BookService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/book-service/src/main/java/net/dg/bookservice/service/impl/BookServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/book-service/src/main/java/net/dg/bookservice/utils/RatingMapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/book-service/src/main/resources/application.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/booking-service/pom.xml">
           <value>
             <set />
@@ -33,6 +153,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/booking-service/src/main/java/net/dg/bookingservice/dto/ResponseVO.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/booking-service/src/main/java/net/dg/bookingservice/entity/Book.java">
           <value>
             <set />
@@ -44,6 +169,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/booking-service/src/main/java/net/dg/bookingservice/entity/ResponseTemplate.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/booking-service/src/main/java/net/dg/bookingservice/exception/BookNotFoundException.java">
           <value>
             <set />
           </value>
@@ -119,6 +249,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/booking-service/src/test/resources/application.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/pom.xml">
           <value>
             <set />
           </value>

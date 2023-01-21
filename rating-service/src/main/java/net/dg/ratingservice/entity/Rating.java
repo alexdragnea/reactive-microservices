@@ -12,11 +12,11 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Data
 public class Rating {
 
-    @Id
-    private String id;
+	@Id
+	private String id;
 
-    private String bookId;
+	private String bookId;
 
-    private int stars;
+	private int stars;
 
 }

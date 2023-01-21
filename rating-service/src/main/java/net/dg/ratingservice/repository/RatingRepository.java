@@ -8,5 +8,6 @@ import reactor.core.publisher.Flux;
 @Repository
 public interface RatingRepository extends ReactiveMongoRepository<Rating, String> {
 
-    Flux<Rating> findRatingsByBookId(String bookId);
+	Flux<Rating> findRatingsByBookId(String bookId);
+
 }

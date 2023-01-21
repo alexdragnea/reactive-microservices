@@ -9,10 +9,11 @@
     </parent>
 
     <groupId>net.dg</groupId>
-    <artifactId>rating-service</artifactId>
+    <artifactId>book-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>rating-service</name>
-    <description>rating-service</description>
+    <name>book-service</name>
+    <description>book-service</description>
+
     <properties>
         <java.version>11</java.version>
         <testcontainers.version>1.17.3</testcontainers.version>
@@ -32,6 +33,11 @@
             <groupId>org.testcontainers</groupId>
             <artifactId>mongodb</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-commons</artifactId>
+            <version>3.1.5</version>
         </dependency>
     </dependencies>
     <dependencyManagement>
