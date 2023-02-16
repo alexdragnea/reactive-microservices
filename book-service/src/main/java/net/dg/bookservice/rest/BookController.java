@@ -7,7 +7,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import reactor.util.function.Tuple2;
@@ -21,8 +20,6 @@ import java.util.stream.Stream;
 public class BookController {
 
 	private final BookService bookService;
-
-	private WebClient.Builder webClientBuilder;
 
 	@GetMapping
 	Flux<Book> getAll() {
@@ -52,7 +49,7 @@ public class BookController {
 	}
 
 	@GetMapping("/{bookId}/with-rating")
-	public Mono<Book> findByIdWithAccounts(@PathVariable("bookId") String bookId) {
+	public Mono<Book> getBooksAndRatingsByBookId(@PathVariable("bookId") String bookId) {
 
 		return bookService.getBookWithRatings(bookId);
 	}
@@ -63,6 +60,11 @@ public class BookController {
 				.flatMap(book -> Flux
 						.zip(Flux.interval(Duration.ofSeconds(2)), Flux.fromStream(Stream.generate(() -> book)))
 						.map(Tuple2::getT2));
+	}
+
+	@GetMapping("/benchmark")
+	public Mono<String> benchMark() {
+		return Mono.just("Hello");
 	}
 
 }

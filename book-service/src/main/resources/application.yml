@@ -3,14 +3,23 @@ server:
 
 spring:
   application:
-    name: bookservice-service
-  webflux:
-    base-path: /api
+    name: book-service
   data:
     mongodb:
       authentication-database: admin
       uri: mongodb://localhost:27017
       database: reactive-microservices
+
+#reactor:
+#  netty:
+#    ioWorkerCount: 10
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    instance-id: ${spring.application.name}:${random.value}
 
 logging:
   level:
@@ -27,3 +36,6 @@ logging:
       netty:
         http:
           client: DEBUG
+
+
+

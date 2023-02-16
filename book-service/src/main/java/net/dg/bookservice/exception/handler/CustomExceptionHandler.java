@@ -10,18 +10,13 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 @ControllerAdvice
 public class CustomExceptionHandler {
 
+	@ExceptionHandler(CustomException.class)
+	public ResponseEntity<ErrorResponse> handleCustomException(CustomException ex) {
+		String status = String.valueOf(HttpStatus.BAD_REQUEST);
+		ErrorResponse errorResponse = new ErrorResponse();
+		errorResponse.setStatus(status);
+		errorResponse.setMessage(ex.getMessage());
+		return new ResponseEntity<>(errorResponse, HttpStatus.BAD_REQUEST);
+	}
 
-    @ExceptionHandler(CustomException.class)
-    public ResponseEntity<ErrorResponse> handleCustomException(CustomException ex) {
-        return this.handleException(ex);
-    }
-
-    @ExceptionHandler(Exception.class)
-    public ResponseEntity<ErrorResponse> handleException(Exception ex) {
-        String status = String.valueOf(HttpStatus.BAD_REQUEST);
-        ErrorResponse errorResponse = new ErrorResponse();
-        errorResponse.setStatus(status);
-        errorResponse.setMessage(ex.getMessage());
-        return new ResponseEntity<>(errorResponse, HttpStatus.BAD_REQUEST);
-    }
 }

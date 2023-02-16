@@ -13,6 +13,21 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../performance-testing-gatling/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../performance-testing-gatling/src/test/java/performance/MvcSimulator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../performance-testing-gatling/src/test/java/performance/ReactiveSimulator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/book-service/pom.xml">
           <value>
             <set />
@@ -68,6 +83,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/book-service/src/main/java/net/dg/bookservice/benchmark/SimulationTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/book-service/src/main/java/net/dg/bookservice/config/AppConfig.java">
           <value>
             <set />
@@ -79,6 +99,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/book-service/src/main/java/net/dg/bookservice/exception/BookNotFoundException.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/book-service/src/main/java/net/dg/bookservice/exception/CustomException.java">
           <value>
             <set />
           </value>
@@ -129,6 +154,21 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/book-service/src/main/resources/application.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/book-service/src/test/java/net/dg/bookservice/benchmark/SimulationTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/book-service/src/test/java/net/dg/bookservice/rest/BookControllerTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/book-service/src/test/java/net/dg/bookservice/service/impl/BookServiceImplTest.java">
           <value>
             <set />
           </value>
@@ -253,6 +293,56 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/discovery-service/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/discovery-service/src/main/java/com/example/discoveryservice/DiscoveryServiceApplication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/discovery-service/src/main/resources/application.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/docker-compose.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/gateway/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/gateway/src/main/java/net/dg/gateway/GatewayApplication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/gateway/src/main/java/net/dg/gateway/config/GatewayRouter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/gateway/src/main/java/net/dg/gateway/config/HttpClientConfig.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/gateway/src/main/resources/application.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/gateway/src/main/resources/application.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/pom.xml">
           <value>
             <set />
@@ -338,7 +428,42 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../spring-cloud-microservices/book-service/src/main/resources/application.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../spring-cloud-microservices/docker-compose.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../spring-cloud-microservices/gateway/src/main/java/net/dg/gateway/config/SpringCloudGatewayRouting.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../spring-cloud-microservices/rating-service/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../spring-cloud-microservices/rating-service/src/main/java/net/dg/ratingservice/RatingServiceApplication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../spring-cloud-microservices/rating-service/src/main/java/net/dg/ratingservice/rest/RatingController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../spring-cloud-microservices/rating-service/src/main/java/net/dg/ratingservice/service/impl/RatingServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../spring-cloud-microservices/rating-service/src/main/resources/application.properties">
           <value>
             <set />
           </value>

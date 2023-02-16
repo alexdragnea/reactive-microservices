@@ -27,18 +27,17 @@ class BookServiceImplTest {
 	@Container
 	static MongoDBContainer mongoDBContainer = new MongoDBContainer("mongo:4.4.2");
 
-	@Autowired
-	private BookRepository bookRepository;
-
-	@Autowired
-	private WebClient.Builder webClientBuilder;
-
-	private BookServiceImpl bookService;
-
 	@DynamicPropertySource
 	static void setProperties(DynamicPropertyRegistry registry) {
 		registry.add("spring.data.mongodb.uri", mongoDBContainer::getReplicaSetUrl);
 	}
+
+	@Autowired
+	private BookRepository bookRepository;
+
+	private WebClient webClient = WebClient.builder().build();
+
+	private BookServiceImpl bookService;
 
 	@AfterAll
 	static void setup() {
@@ -47,7 +46,7 @@ class BookServiceImplTest {
 
 	@BeforeEach
 	void setUp() {
-		this.bookService = new BookServiceImpl(bookRepository, webClientBuilder);
+		this.bookService = new BookServiceImpl(bookRepository, webClient);
 	}
 
 	@Test
